@@ -1,10 +1,12 @@
 -- CreateTable
 CREATE TABLE "UserLanguage" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "languages" TEXT NOT NULL,
-    "age" INTEGER NOT NULL
+    "age" INTEGER NOT NULL,
+
+    CONSTRAINT "UserLanguage_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
