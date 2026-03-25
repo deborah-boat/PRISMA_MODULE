@@ -1,0 +1,25 @@
+{
+  "name": "module_prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "echo \"No automated tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.17.0",
+    "express": "^5.2.1",
+    "prisma": "^6.17.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
